@@ -1,6 +1,6 @@
 public class Principal {
     public static void main(String[] args) {
-        Libro l1=new Libro();
+        Libro l1=new Libro("Pinocho", "Carlo Colloid", "Cuento",1881, 3);
         Libro l2=new Libro();
         System.out.println("Libro 1: "+l1.mostrarInformacion());
         System.out.println("Prestando libro...");
@@ -17,5 +17,10 @@ public class Principal {
             System.out.println("Ejemplar prestado");
         }
         System.out.println("Libro 1: "+l1.mostrarInformacion());
+        System.out.println("Libro 2: "+l2.mostrarInformacion());
+
+        l1.setTitulo("Nuevo titulo");
+        l1.setTitulo("El principito");
+        System.out.println("Libro 1: "+ l1.mostrarInformacion());
     }
 }
