@@ -23,9 +23,15 @@ public class Principal {
         l1.setTitulo("Metamorfosis");
         l1.setAutor("kafka");
         l1.setCategoria("narrativa moderna");
-        l1.setAnio(1984);
+        l1.setAnio(1915);
         l1.setCantidadEjemplares(7);
         System.out.println("Libro 1: "+ l1.mostrarInformacion());
+
+        System.out.println("Devolviendo libro...");
+        l1.devolver();
+        System.out.println("Libro 1: "+ l1.mostrarInformacion());
+
+
 
         //invocar 4 metodos
         //invocar metodo mostrarInformacion
